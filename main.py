@@ -1,6 +1,6 @@
+
 import pandas as pd
-# Correlation between numerical variables
-import seaborn as sns
+import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the dataset
@@ -30,9 +30,29 @@ print(df.head())
 print(df.describe())
 
 
+# Calculate the correlation matrix
 corr = df.corr()
-plt.figure(figsize=(10,8))
-sns.heatmap(corr, annot=True, cmap='coolwarm')
+
+# Create a figure and axis
+plt.figure(figsize=(10, 8))
+
+# Create the heatmap
+cax = plt.matshow(corr, cmap='coolwarm', alpha=0.8)
+
+# Add colorbar
+plt.colorbar(cax)
+
+# Annotate the heatmap
+for (i, j), val in np.ndenumerate(corr):
+    plt.text(j, i, f"{val:.2f}", ha='center', va='center', color='black')
+
+# Set ticks and labels
+plt.xticks(np.arange(len(corr)), corr.columns, rotation=45)
+plt.yticks(np.arange(len(corr)), corr.columns)
+
+# Set the title
 plt.title('Correlation Matrix')
+
+# Show the plot
 plt.show()
 
