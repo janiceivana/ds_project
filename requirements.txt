@@ -7,6 +7,7 @@ scipy==1.7.3
 seaborn==0.11.2
 statsmodels==0.13.2
 streamlit==1.33.0
+distutils==24.2
 plotly
 google-api-python-client
 google-auth-httplib2
