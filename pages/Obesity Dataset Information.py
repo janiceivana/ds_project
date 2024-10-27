@@ -22,8 +22,6 @@ import streamlit as st
 
 
 levels = pd.read_csv("estimation_of_obesity_levels_based_on_eating_habits_and_physical_condition.csv")
-classification = pd.read_csv("Obesity Classification.csv")
-dataset = pd.read_csv("ObesityDataSet.csv")
 
 #Print dataset
 st.subheader("Dataset Full Table")
@@ -47,3 +45,4 @@ st.markdown("Overweight_Level_II: 3")
 st.markdown("Obesity_Type_I: 4")
 st.markdown("Obesity_Type_II: 5")
 st.markdown("Obesity_Type_III: 6")
+
