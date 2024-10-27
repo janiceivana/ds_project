@@ -40,17 +40,10 @@ st.write(levels.info())
 st.subheader("Conclusion")
 st.markdown("The first dataset shows that the data is clean based on the non-existence null entries on each column. This dataset was taken from UCI library. It has been cleaned using techniques: z-score normalization, one-hot encoding, outlier removal, min-max scaling, and feature selection.")
 st.markdown("The target column 'NObeyesdad' contains the following encoding of Obesity Levels:")
-st.markdown(""" 
-            Insufficient_Weight: 0
-         
-            Normal_Weight:1
-
-            Overweight_Level_I: 2
-
-            Overweight_Level_II: 3
-
-            Obesity_Type_I: 4
-
-            Obesity_Type_II: 5
-         
-            Obesity_Type_III: 6""")
+st.markdown("Insufficient_Weight: 0")
+st.markdown("Normal_Weight:1")
+st.markdown("Overweight_Level_I: 2")
+st.markdown("Overweight_Level_II: 3")
+st.markdown("Obesity_Type_I: 4")
+st.markdown("Obesity_Type_II: 5")
+st.markdown("Obesity_Type_III: 6")
