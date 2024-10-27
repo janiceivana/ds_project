@@ -42,9 +42,15 @@ st.markdown("The first dataset shows that the data is clean based on the non-exi
 st.markdown("The target column 'NObeyesdad' contains the following encoding of Obesity Levels:")
 st.write(""" 
             Insufficient_Weight: 0
+         
             Normal_Weight:1
+
             Overweight_Level_I: 2
+
             Overweight_Level_II: 3
+
             Obesity_Type_I: 4
+
             Obesity_Type_II: 5
+         
             Obesity_Type_III: 6""")
