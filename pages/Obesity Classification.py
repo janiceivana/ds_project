@@ -35,7 +35,7 @@ st.write(levels.describe(include="all"))
 
 #Print dataset information
 st.subheader("Dataset Information")
-st.write(levels.info())
+st.markdown(levels.info())
 
 st.markdown("Conclusion: the first dataset shows that the data is clean based on the non-existence null entries on each column. This dataset was taken from UCI library. It has been cleaned using techniques: z-score normalization, one-hot encoding, outlier removal, min-max scaling, and feature selection.")
 st.markdown("The target column 'NObeyesdad' contains the following encoding of Obesity Levels:")
