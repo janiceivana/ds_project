@@ -44,8 +44,11 @@ accuracy = accuracy_score(y_test, y_pred)
 conf_matrix = confusion_matrix(y_test, y_pred)
 class_report = classification_report(y_test, y_pred)
 
-print(f"Accuracy: {accuracy:.2f}")
-print("Confusion Matrix:")
-print(conf_matrix)
-print("Classification Report:")
-print(class_report)
+st.subheader("Accuracy")
+st.write(f"Accuracy: {accuracy:.2f}")
+
+st.subheader("Confusion Matrix:")
+st.write(conf_matrix)
+
+st.subheader("Classification Report:")
+st.write(class_report)
