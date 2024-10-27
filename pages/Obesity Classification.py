@@ -25,4 +25,11 @@ levels = pd.read_csv("estimation_of_obesity_levels_based_on_eating_habits_and_ph
 classification = pd.read_csv("Obesity Classification.csv")
 dataset = pd.read_csv("ObesityDataSet.csv")
 
-st.write(levels.head())
+#Print dataset
+st.subheader("Dataset Full Table")
+st.write(levels)
+
+#Print dataset statistics
+st.subheader("Dataset Description")
+st.write(levels.describe(include="all"))
+
